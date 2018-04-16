@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/QuestionContainer"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/question"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_gravity="start"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/prompt_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+    <RadioGroup android:id="@+id/radioGroupYesNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton android:id="@+id/radio_Yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_Yes"
+            android:textSize="30sp"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_No"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_No"
+            android:textSize="30sp"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+
+
+</LinearLayout>
